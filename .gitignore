@@ -1,0 +1,10 @@
+# 1. Ignore all CSV and ZIP files
+*.csv
+*.zip
+
+# 2. Ignore all files, but ALLOW Git to enter directories
+data/**
+!data/**/
+
+# 3. Do not ignore .gitkeep files
+!.gitkeep 
