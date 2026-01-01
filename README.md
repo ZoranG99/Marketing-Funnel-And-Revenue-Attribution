@@ -2,24 +2,15 @@
 > **A Strategic Deep-Dive Linking Lead Acquisition to E-commerce Profitability**
 
 ## 📖 Table of Contents
-* [Project Context & Data Pipeline](#-project-context--data-pipeline)
 * [Project Overview](#-project-overview)
 * [Tech Stack & Tools](#-tech-stack--tools)
-* [Assumptions & Caveats](#-assumptions--caveats)
-* [Visual Insights & Performance Analysis](#-visual-insights--performance-analysis)
 * [Executive Summary & Recommendations](#-executive-summary--recommendations)
+* [Visual Insights & Performance Analysis](#-visual-insights--performance-analysis)
+* [Project Context & Data Pipeline](#-project-context--data-pipeline)
+* [Assumptions & Caveats](#-assumptions--caveats)
 * [Repository Structure](#-repository-structure)
 * [How to Reproduce](#-how-to-reproduce)
 * [Author](#-author) 
-
-## 📌 Project Context & Data Sources
-This repository serves as the "commercial layer" of a larger data ecosystem. It bridges the gap between marketing lead acquisition and financial performance by integrating funnel data with processed logistics data from an upstream project.
-
-### 🔗 Data Sources & Dependencies
-* **Primary Datasets:** 
-   * [Marketing Funnel by Olist (Kaggle)](https://www.kaggle.com/datasets/olistbr/marketing-funnel-olist)
-   * [Brazilian E-Commerce Public Dataset (Kaggle)](https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce)
-* **Upstream Project Dependency:** This analysis requires processed files generated in the [Ecommerce-Logistics-And-Revenue-Optimization](https://github.com/ZoranG99/Ecommerce-Logistics-And-Revenue-Optimization) repository.
 
 ## 📌 Project Overview
 This analysis serves as a Strategic Business Intelligence layer for Olist. By analyzing marketing acquisition within a $13.5M+ e-commerce platform, I have mapped the seller journey for a specialized bridge of sellers generating **$676,851** in attributed revenue.
@@ -48,13 +39,13 @@ To provide a 360-degree view of marketing performance, this project answers:
 * **Environment & Ops:**
    - **VS Code**, **Jupyter Notebooks**, and **Git/GitHub** for version control and documentation.
 
-## ⚠️ Assumptions & Caveats
-To ensure the integrity of the strategic recommendations, the following constraints were applied to the analysis:
-* **Currency Simulation:** Original values in Brazilian Reals (BRL) were formatted as **USD ($)** to simulate a US-based executive reporting environment.
-* **The "Bridge" Dataset:** Revenue attribution is based on a "Bridge" of **380 unique sellers**. Financial totals ($676k+) reflect the performance of these specific sellers tracked through the marketing funnel, rather than the entire $13.5M+ Olist platform analyzed in my previous project.
-* **Attribution Logic:** This analysis uses a **First-Touch Attribution** model based on the "Origin" recorded when the lead first entered the Olist marketing funnel.
-* **Data Date Range:** The analysis uses historical data (2016–2018). While the logic is scalable, it does not reflect 2025 market volatility or recent e-commerce trends.
-* **Lead Anonymity:** Leads with an "Unknown" origin were retained in the analysis as they represent a significant portion of the GMV, likely driven by direct brand equity or word-of-mouth.
+## 🏆 Executive Summary & Recommendations
+Based on this end-to-end analysis of Olist's marketing funnel and sales performance, I have identified four primary strategic pillars for growth:
+
+1. **Target the "Golden Goose" Niches:** The **Watches** segment is highly under-penetrated. With an average revenue of **$39,092 per seller**, marketing should pivot to specifically target high-end watch distributors to maximize GMV with minimal seller overhead.
+2. **Optimize "Slow Burn" Channels:** **Social Media** leads take over 60 days to close with low conversion rates (5.56%). The sales team should implement automated lead-nurturing workflows for this channel to reduce the manual effort spent on lower-intent leads.
+3. **Prioritize Quality Acquisition:** **Email and Organic Search** leads not only result in the highest **AOV ($353.54)** but also the highest customer satisfaction scores (4.3+). These channels should be the cornerstone of Olist's "High-Value Seller" acquisition programs.
+4. **Efficiency Over Volume:** While **Paid Search** drives high lead volume, its AOV is lower than organic channels. Olist should test shifting a portion of the Paid Search budget into SEO and Referral programs to attract higher-ticket sellers with better long-term retention.
 
 ## 📈 Visual Insights & Performance Analysis
 To maintain a professional and cohesive aesthetic, I developed a custom "Olist Dark Brand" for all visualizations, focusing on high-contrast Electric Cyan accents against a modern slate background.
@@ -101,14 +92,22 @@ Sustainable growth depends on the quality of the sellers acquired. I mapped mark
 * **Consistency at Scale:** **Paid Search** maintains a strong 4.25 score despite having the highest volume of reviews (1,444), proving that scaling this channel does not compromise quality.
 * **The Red Flag:** Experimental sources categorized as **"Other"** show a significant drop to 3.53, indicating these sellers require stricter onboarding vetting.
 
-## 🏆 Executive Summary & Recommendations
+## 📌 Project Context & Data Sources
+This repository serves as the "commercial layer" of a larger data ecosystem. It bridges the gap between marketing lead acquisition and financial performance by integrating funnel data with processed logistics data from an upstream project.
 
-Based on this end-to-end analysis of Olist's marketing funnel and sales performance, I have identified four primary strategic pillars for growth:
+### 🔗 Data Sources & Dependencies
+* **Primary Datasets:** 
+   * [Marketing Funnel by Olist (Kaggle)](https://www.kaggle.com/datasets/olistbr/marketing-funnel-olist)
+   * [Brazilian E-Commerce Public Dataset (Kaggle)](https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce)
+* **Upstream Project Dependency:** This analysis requires processed files generated in the [Ecommerce-Logistics-And-Revenue-Optimization](https://github.com/ZoranG99/Ecommerce-Logistics-And-Revenue-Optimization) repository.
 
-1. **Target the "Golden Goose" Niches:** The **Watches** segment is highly under-penetrated. With an average revenue of **$39,092 per seller**, marketing should pivot to specifically target high-end watch distributors to maximize GMV with minimal seller overhead.
-2. **Optimize "Slow Burn" Channels:** **Social Media** leads take over 60 days to close with low conversion rates (5.56%). The sales team should implement automated lead-nurturing workflows for this channel to reduce the manual effort spent on lower-intent leads.
-3. **Prioritize Quality Acquisition:** **Email and Organic Search** leads not only result in the highest **AOV ($353.54)** but also the highest customer satisfaction scores (4.3+). These channels should be the cornerstone of Olist's "High-Value Seller" acquisition programs.
-4. **Efficiency Over Volume:** While **Paid Search** drives high lead volume, its AOV is lower than organic channels. Olist should test shifting a portion of the Paid Search budget into SEO and Referral programs to attract higher-ticket sellers with better long-term retention.
+## ⚠️ Assumptions & Caveats
+To ensure the integrity of the strategic recommendations, the following constraints were applied to the analysis:
+* **Currency Simulation:** Original values in Brazilian Reals (BRL) were formatted as **USD ($)** to simulate a US-based executive reporting environment.
+* **The "Bridge" Dataset:** Revenue attribution is based on a "Bridge" of **380 unique sellers**. Financial totals ($676k+) reflect the performance of these specific sellers tracked through the marketing funnel, rather than the entire $13.5M+ Olist platform analyzed in my previous project.
+* **Attribution Logic:** This analysis uses a **First-Touch Attribution** model based on the "Origin" recorded when the lead first entered the Olist marketing funnel.
+* **Data Date Range:** The analysis uses historical data (2016–2018). While the logic is scalable, it does not reflect 2025 market volatility or recent e-commerce trends.
+* **Lead Anonymity:** Leads with an "Unknown" origin were retained in the analysis as they represent a significant portion of the GMV, likely driven by direct brand equity or word-of-mouth.
 
 ## 📂 Repository Structure
 The project is organized to ensure full reproducibility, following a logical flow from raw data to final business insights.
@@ -127,7 +126,6 @@ Marketing-Funnel-And-Revenue-Attribution/
 ```
 
 ## 🚀 How to Reproduce
-
 This project follows a strict execution order to maintain data integrity across the pipeline.
 
 ### Step 1: Data Pipeline & External Dependencies
