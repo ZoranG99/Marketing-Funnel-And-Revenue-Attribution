@@ -13,9 +13,9 @@
 * [Author](#-author) 
 
 ## 📌 Project Overview
-This analysis serves as a Strategic Business Intelligence layer for Olist. By analyzing marketing acquisition within a $13.5M+ e-commerce platform, I have mapped the seller journey for a specialized bridge of sellers generating **$676,851** in attributed revenue.
+This analysis serves as a **Strategic Business Intelligence** layer for Olist. By analyzing marketing acquisition within a $13.5M+ e-commerce platform, I have mapped the seller journey for a specialized bridge of sellers generating **$676,851** in attributed revenue.
 
-The goal is to move beyond simple "lead counting" and uncover the true ROI of marketing spend by identifying which channels bring in the most profitable and reliable sellers.
+The **goal** is to move beyond simple "lead counting" and uncover the true ROI of marketing spend by identifying which channels bring in the most profitable and reliable sellers.
 
 ### 🎯 The "Big 5" Business Questions
 To provide a 360-degree view of marketing performance, this project answers:
@@ -32,16 +32,16 @@ To provide a 360-degree view of marketing performance, this project answers:
 
 ## 🛠️ Tech Stack & Tools
 * **Database Management**
-   - **PostgreSQL** (Relational modeling, complex multi-table JOINs, and Data Integrity enforcement via Composite Primary Keys).
+   * **PostgreSQL** (Relational modeling, complex multi-table JOINs, and Data Integrity enforcement via Composite Primary Keys).
 * **Database Clients**
-   - **pgAdmin4** & **DBeaver** (Schema architecture and high-performance bulk data loading using `COPY` commands).
+   * **pgAdmin4** & **DBeaver** (Schema architecture and high-performance bulk data loading using `COPY` commands).
 * **Data Processing**
-   - **Python / Pandas** (End-to-end ETL pipelines, string vectorization for label cleaning, and financial data type optimization).
+   * **Python / Pandas** (End-to-end ETL pipelines, string vectorization for label cleaning, and financial data type optimization).
 * **Visualization**
-   - **Seaborn & Matplotlib:** Advanced custom-branded "Olist Dark Theme" visualizations, including Dual-Axis Line/Bar charts and Lollipop charts.
-   - **Squarify:** Treemap implementation for hierarchical Business Segment market-share analysis.
+   * **Seaborn & Matplotlib:** Advanced custom-branded "Olist Dark Theme" visualizations, including Dual-Axis Line/Bar charts and Lollipop charts.
+   * **Squarify:** Treemap implementation for hierarchical Business Segment market-share analysis.
 * **Environment & Ops**
-   - **VS Code**, **Jupyter Notebooks**, and **Git/GitHub** for version control and documentation.
+   * **VS Code**, **Jupyter Notebooks**, and **Git/GitHub** for version control and documentation.
 
 ## 🏆 Executive Summary & Recommendations
 Based on this end-to-end analysis of Olist's marketing funnel and sales performance, I have identified four primary strategic pillars for growth.
@@ -123,6 +123,7 @@ To ensure the integrity of the strategic recommendations, the following constrai
 
 ## 📂 Repository Structure
 The project is organized to ensure full reproducibility, following a logical flow from raw data to final business insights.
+
 ```text
 Marketing-Funnel-And-Revenue-Attribution/
 ├── assets/                     # High-resolution branded visualizations
@@ -139,7 +140,6 @@ Marketing-Funnel-And-Revenue-Attribution/
 
 ## 🚀 How to Reproduce
 This project follows a strict execution order to maintain data integrity across the pipeline.
-
 1. **Data Pipeline & External Dependencies**
    * This analysis requires processed files from the [Ecommerce-Logistics-And-Revenue-Optimization](https://github.com/ZoranG99/Ecommerce-Logistics-And-Revenue-Optimization) project.
    * Download raw datasets from Kaggle (links in [📌 Project Context](#-project-context--data-pipeline)).
