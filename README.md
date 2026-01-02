@@ -19,7 +19,6 @@ The goal is to move beyond simple "lead counting" and uncover the true ROI of ma
 
 ### 🎯 The "Big 5" Business Questions
 To provide a 360-degree view of marketing performance, this project answers:
-
 1. **Conversion Efficiency:** Which marketing origins provide the highest quality leads (Lead-to-Deal)?
 2. **Sales Velocity:** How long does it take to close a deal across different channels?
 3. **Revenue Attribution:** Which channels drive the highest Gross Merchandise Volume (GMV) and Average Order Value (AOV)?
@@ -27,25 +26,29 @@ To provide a 360-degree view of marketing performance, this project answers:
 5. **Customer Satisfaction:** Do specific marketing sources lead to higher-quality sellers and better review scores?
 
 ## 🛠️ Tech Stack & Tools
-* **Database Management:**
+* **Database Management**
    - **PostgreSQL** (Relational modeling, complex multi-table JOINs, and Data Integrity enforcement via Composite Primary Keys).
-* **Database Clients:**
+* **Database Clients**
    - **pgAdmin4** & **DBeaver** (Schema architecture and high-performance bulk data loading using `COPY` commands).
-* **Data Processing:**
+* **Data Processing**
    - **Python / Pandas** (End-to-end ETL pipelines, string vectorization for label cleaning, and financial data type optimization).
-* **Visualization:**
+* **Visualization**
    - **Seaborn & Matplotlib:** Advanced custom-branded "Olist Dark Theme" visualizations, including Dual-Axis Line/Bar charts and Lollipop charts.
    - **Squarify:** Treemap implementation for hierarchical Business Segment market-share analysis.
-* **Environment & Ops:**
+* **Environment & Ops**
    - **VS Code**, **Jupyter Notebooks**, and **Git/GitHub** for version control and documentation.
 
 ## 🏆 Executive Summary & Recommendations
 Based on this end-to-end analysis of Olist's marketing funnel and sales performance, I have identified four primary strategic pillars for growth:
 
-1. **Target the "Golden Goose" Niches:** The **Watches** segment is highly under-penetrated. With an average revenue of **$39,092 per seller**, marketing should pivot to specifically target high-end watch distributors to maximize GMV with minimal seller overhead.
-2. **Optimize "Slow Burn" Channels:** **Social Media** leads take over 60 days to close with low conversion rates (5.56%). The sales team should implement automated lead-nurturing workflows for this channel to reduce the manual effort spent on lower-intent leads.
-3. **Prioritize Quality Acquisition:** **Email and Organic Search** leads not only result in the highest **AOV ($353.54)** but also the highest customer satisfaction scores (4.3+). These channels should be the cornerstone of Olist's "High-Value Seller" acquisition programs.
-4. **Efficiency Over Volume:** While **Paid Search** drives high lead volume, its AOV is lower than organic channels. Olist should test shifting a portion of the Paid Search budget into SEO and Referral programs to attract higher-ticket sellers with better long-term retention.
+1. **Target the "Golden Goose" Niches** 
+   * The **Watches** segment is highly under-penetrated. With an average revenue of **$39,092 per seller**, marketing should pivot to specifically target high-end watch distributors to maximize GMV with minimal seller overhead.
+2. **Optimize "Slow Burn" Channels** 
+   * **Social Media** leads take over 60 days to close with low conversion rates (5.56%). The sales team should implement automated lead-nurturing workflows for this channel to reduce the manual effort spent on lower-intent leads.
+3. **Prioritize Quality Acquisition** 
+   * **Email and Organic Search** leads not only result in the highest **AOV ($353.54)** but also the highest customer satisfaction scores (4.3+). These channels should be the cornerstone of Olist's "High-Value Seller" acquisition programs.
+4. **Efficiency Over Volume** 
+   * While **Paid Search** drives high lead volume, its AOV is lower than organic channels. Olist should test shifting a portion of the Paid Search budget into SEO and Referral programs to attract higher-ticket sellers with better long-term retention.
 
 ## 📈 Visual Insights & Performance Analysis
 To maintain a professional and cohesive aesthetic, I developed a custom "Olist Dark Brand" for all visualizations, focusing on high-contrast Electric Cyan accents against a modern slate background.
@@ -96,18 +99,24 @@ Sustainable growth depends on the quality of the sellers acquired. I mapped mark
 This repository serves as the "commercial layer" of a larger data ecosystem. It bridges the gap between marketing lead acquisition and financial performance by integrating funnel data with processed logistics data from an upstream project.
 
 ### 🔗 Data Sources & Dependencies
-* **Primary Datasets:** 
+* **Primary Datasets** 
    * [Marketing Funnel by Olist (Kaggle)](https://www.kaggle.com/datasets/olistbr/marketing-funnel-olist)
    * [Brazilian E-Commerce Public Dataset (Kaggle)](https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce)
-* **Upstream Project Dependency:** This analysis requires processed files generated in the [Ecommerce-Logistics-And-Revenue-Optimization](https://github.com/ZoranG99/Ecommerce-Logistics-And-Revenue-Optimization) repository.
+* **Upstream Project Dependency** 
+   * This analysis requires processed files generated in the [Ecommerce-Logistics-And-Revenue-Optimization](https://github.com/ZoranG99/Ecommerce-Logistics-And-Revenue-Optimization) repository.
 
 ## ⚠️ Assumptions & Caveats
 To ensure the integrity of the strategic recommendations, the following constraints were applied to the analysis:
-* **Currency Simulation:** Original values in Brazilian Reals (BRL) were formatted as **USD ($)** to simulate a US-based executive reporting environment.
-* **The "Bridge" Dataset:** Revenue attribution is based on a "Bridge" of **380 unique sellers**. Financial totals ($676k+) reflect the performance of these specific sellers tracked through the marketing funnel, rather than the entire $13.5M+ Olist platform analyzed in my previous project.
-* **Attribution Logic:** This analysis uses a **First-Touch Attribution** model based on the "Origin" recorded when the lead first entered the Olist marketing funnel.
-* **Data Date Range:** The analysis uses historical data (2016–2018). While the logic is scalable, it does not reflect 2025 market volatility or recent e-commerce trends.
-* **Lead Anonymity:** Leads with an "Unknown" origin were retained in the analysis as they represent a significant portion of the GMV, likely driven by direct brand equity or word-of-mouth.
+* **Currency Simulation** 
+   * Original values in Brazilian Reals (BRL) were formatted as **USD ($)** to simulate a US-based executive reporting environment.
+* **The "Bridge" Dataset** 
+   * Revenue attribution is based on a "Bridge" of **380 unique sellers**. Financial totals ($676k+) reflect the performance of these specific sellers tracked through the marketing funnel, rather than the entire $13.5M+ Olist platform analyzed in my previous project.
+* **Attribution Logic** 
+   * This analysis uses a **First-Touch Attribution** model based on the "Origin" recorded when the lead first entered the Olist marketing funnel.
+* **Data Date Range** 
+   * The analysis uses historical data (2016–2018). While the logic is scalable, it does not reflect 2025 market volatility or recent e-commerce trends.
+* **Lead Anonymity** 
+   * Leads with an "Unknown" origin were retained in the analysis as they represent a significant portion of the GMV, likely driven by direct brand equity or word-of-mouth.
 
 ## 📂 Repository Structure
 The project is organized to ensure full reproducibility, following a logical flow from raw data to final business insights.
@@ -128,22 +137,19 @@ Marketing-Funnel-And-Revenue-Attribution/
 ## 🚀 How to Reproduce
 This project follows a strict execution order to maintain data integrity across the pipeline.
 
-### Step 1: Data Pipeline & External Dependencies
-* This analysis requires processed files from the [Ecommerce-Logistics-And-Revenue-Optimization](https://github.com/ZoranG99/Ecommerce-Logistics-And-Revenue-Optimization) project.
-* Download raw datasets from Kaggle (links in [📌 Project Context](#-project-context--data-pipeline)).
-* Run the [01_etl_pipeline.ipynb](https://github.com/ZoranG99/Ecommerce-Logistics-And-Revenue-Optimization/blob/main/scripts/01_etl_pipeline.ipynb) from the logistics project.
-* Place the resulting files into: `data/processed/Ecommerce-Logistics-And-Revenue-Optimization_processed/`.
-
-### Step 2: Data Staging & Cleaning (Python)
-* Run **`scripts/Python/01_Data_Cleaning_and_Database_Upload.ipynb`**.
-* This script merges the marketing leads with logistics data to create the **`cleaned_marketing_funnel.csv`** and automatically uploads all tables to your PostgreSQL instance.
-
-### Step 3: Database Analysis (PostgreSQL)
-* Once the tables are staged, navigate to `scripts/PostgreSQL/`.
-* Execute scripts **01_create_and_import.sql** through **07_review_score_correlation.sql** in numerical order to generate the core analytical tables.
-
-### Step 4: Final Visualization (Python)
-* Run **`scripts/Python/02_Final_Analysis_Visuals.ipynb`** to generate the branded "Olist Dark Theme" charts showcased in this report.
+1. **Data Pipeline & External Dependencies**
+   * This analysis requires processed files from the [Ecommerce-Logistics-And-Revenue-Optimization](https://github.com/ZoranG99/Ecommerce-Logistics-And-Revenue-Optimization) project.
+   * Download raw datasets from Kaggle (links in [📌 Project Context](#-project-context--data-pipeline)).
+   * Run the [01_etl_pipeline.ipynb](https://github.com/ZoranG99/Ecommerce-Logistics-And-Revenue-Optimization/blob/main/scripts/01_etl_pipeline.ipynb) from the logistics project.
+   * Place the resulting files into: `data/processed/Ecommerce-Logistics-And-Revenue-Optimization_processed/`.
+2. **Data Staging & Cleaning (Python)**
+   * Run **`scripts/Python/01_Data_Cleaning_and_Database_Upload.ipynb`**.
+   * This script merges the marketing leads with logistics data to create the **`cleaned_marketing_funnel.csv`** and automatically uploads all tables to your PostgreSQL instance.
+3. **Database Analysis (PostgreSQL)**
+   * Once the tables are staged, navigate to `scripts/PostgreSQL/`.
+   * Execute scripts **01_create_and_import.sql** through **07_review_score_correlation.sql** in numerical order to generate the core analytical tables.
+4. **Final Visualization (Python)**
+   * Run **`scripts/Python/02_Final_Analysis_Visuals.ipynb`** to generate the branded "Olist Dark Theme" charts showcased in this report.
 
 ## 👤 Author
 **Zoran Gusic**
