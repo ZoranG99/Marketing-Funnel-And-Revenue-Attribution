@@ -19,11 +19,16 @@ The goal is to move beyond simple "lead counting" and uncover the true ROI of ma
 
 ### 🎯 The "Big 5" Business Questions
 To provide a 360-degree view of marketing performance, this project answers:
-1. **Conversion Efficiency:** Which marketing origins provide the highest quality leads (Lead-to-Deal)?
-2. **Sales Velocity:** How long does it take to close a deal across different channels?
-3. **Revenue Attribution:** Which channels drive the highest Gross Merchandise Volume (GMV) and Average Order Value (AOV)?
-4. **Niche Profitability:** Which business segments (industries) are the "hidden gems" of the platform?
-5. **Customer Satisfaction:** Do specific marketing sources lead to higher-quality sellers and better review scores?
+1. **Conversion Efficiency** 
+   * Which marketing origins provide the highest quality leads (Lead-to-Deal)?
+2. **Sales Velocity** 
+   * How long does it take to close a deal across different channels?
+3. **Revenue Attribution** 
+   * Which channels drive the highest Gross Merchandise Volume (GMV) and Average Order Value (AOV)?
+4. **Niche Profitability** 
+   * Which business segments (industries) are the "hidden gems" of the platform?
+5. **Customer Satisfaction** 
+   * Do specific marketing sources lead to higher-quality sellers and better review scores?
 
 ## 🛠️ Tech Stack & Tools
 * **Database Management**
@@ -39,8 +44,7 @@ To provide a 360-degree view of marketing performance, this project answers:
    - **VS Code**, **Jupyter Notebooks**, and **Git/GitHub** for version control and documentation.
 
 ## 🏆 Executive Summary & Recommendations
-Based on this end-to-end analysis of Olist's marketing funnel and sales performance, I have identified four primary strategic pillars for growth:
-
+Based on this end-to-end analysis of Olist's marketing funnel and sales performance, I have identified four primary strategic pillars for growth.
 1. **Target the "Golden Goose" Niches** 
    * The **Watches** segment is highly under-penetrated. With an average revenue of **$39,092 per seller**, marketing should pivot to specifically target high-end watch distributors to maximize GMV with minimal seller overhead.
 2. **Optimize "Slow Burn" Channels** 
@@ -52,7 +56,6 @@ Based on this end-to-end analysis of Olist's marketing funnel and sales performa
 
 ## 📈 Visual Insights & Performance Analysis
 To maintain a professional and cohesive aesthetic, I developed a custom "Olist Dark Brand" for all visualizations, focusing on high-contrast Electric Cyan accents against a modern slate background.
-
 ### 1. Lead Quality: Conversion Rate by Marketing Origin
 This analysis identifies the "quality" of leads entering the funnel. While volume varies, identifying the origins that convert at the highest rate is critical for sales efficiency.
 
@@ -106,7 +109,7 @@ This repository serves as the "commercial layer" of a larger data ecosystem. It 
    * This analysis requires processed files generated in the [Ecommerce-Logistics-And-Revenue-Optimization](https://github.com/ZoranG99/Ecommerce-Logistics-And-Revenue-Optimization) repository.
 
 ## ⚠️ Assumptions & Caveats
-To ensure the integrity of the strategic recommendations, the following constraints were applied to the analysis:
+To ensure the integrity of the strategic recommendations, the following constraints were applied to the analysis.
 * **Currency Simulation** 
    * Original values in Brazilian Reals (BRL) were formatted as **USD ($)** to simulate a US-based executive reporting environment.
 * **The "Bridge" Dataset** 
